@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cnoid_jackal_bringup</name>
+  <version>0.0.1</version>
+  <description>The cnoid_jackal_bringup package</description>
+  <maintainer email="suzuki.kenta38@jaea.go.jp">k38-suzuki</maintainer>
+  <license>BSD</license>
+  <author email="suzuki.kenta38@jaea.go.jp">k38-suzuki</author>
+
+  <!-- <url type="repository">https://github.com/k38-suzuki/cnoid_jackal_bringup.git</url> -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>choreonoid</depend>
+  <depend>choreonoid_ros</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>roscpp</depend>
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
