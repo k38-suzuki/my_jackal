@@ -19,14 +19,14 @@ void joyCallback(const sensor_msgs::Joy::ConstPtr& msg)
         k[1] = 1.0;
     }
 
-    geometry_msgs::Twist twist;
-    twist.linear.x = k[0] * 2.0 * msg->axes[1];
-    twist.linear.y = 0.0;
-    twist.linear.z = 0.0;
-    twist.angular.x = 0.0;
-    twist.angular.y = 0.0;
-    twist.angular.z = k[1] * 1.4 * msg->axes[0];
-    vel_pub.publish(twist);
+    geometry_msgs::Twist twist_msg;
+    twist_msg.linear.x = k[0] * 2.0 * msg->axes[1];
+    twist_msg.linear.y = 0.0;
+    twist_msg.linear.z = 0.0;
+    twist_msg.angular.x = 0.0;
+    twist_msg.angular.y = 0.0;
+    twist_msg.angular.z = k[1] * 1.4 * msg->axes[0];
+    vel_pub.publish(twist_msg);
 }
 
 int main(int argc, char* argv[])
