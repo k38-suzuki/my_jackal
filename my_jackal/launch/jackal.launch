@@ -2,5 +2,5 @@
   <node pkg="choreonoid_joy" name="choreonoid_joy" type="node" />
   <node pkg="joy2jackal" name="joy2jackal" type="joy2jackal_node" />
   <node pkg="choreonoid_ros" name="choreonoid" type="choreonoid"
-        args="$(find cnoid_jackal_bringup)/project/ROS-Jackal.cnoid --start-simulation" />
+        args="$(find my_jackal)/project/jackal.cnoid --start-simulation" />
 </launch>

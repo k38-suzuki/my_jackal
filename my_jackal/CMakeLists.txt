@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5.0)
-project(cnoid_jackal_bringup)
+project(my_jackal)
 
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release CACHE STRING

@@ -1,5 +1,5 @@
 /**
-   ROS Jackal Controller
+   Jackal Drive Controller
    @author Kenta Suzuki
 */
 
@@ -10,7 +10,7 @@
 
 using namespace cnoid;
 
-class ROSJackalController : public SimpleController
+class JackalDriveController : public SimpleController
 {
     std::unique_ptr<ros::NodeHandle> node;
     ros::Subscriber subscriber;
@@ -47,7 +47,7 @@ public:
             io->enableIO(joint);
         }
 
-        subscriber = node->subscribe("cmd_vel", 100, &ROSJackalController::twistCallback, this);
+        subscriber = node->subscribe("cmd_vel", 100, &JackalDriveController::twistCallback, this);
 
         return true;
     }
@@ -86,4 +86,4 @@ public:
     }
 };
 
-CNOID_IMPLEMENT_SIMPLE_CONTROLLER_FACTORY(ROSJackalController)
+CNOID_IMPLEMENT_SIMPLE_CONTROLLER_FACTORY(JackalDriveController)

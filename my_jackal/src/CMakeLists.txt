@@ -1,0 +1,5 @@
+choreonoid_add_simple_controller(MyHuskyDriveController HuskyDriveController.cpp)
+target_link_libraries(MyHuskyDriveController ${catkin_LIBRARIES})
+
+choreonoid_add_simple_controller(MyJackalDriveController JackalDriveController.cpp)
+target_link_libraries(MyJackalDriveController ${catkin_LIBRARIES})

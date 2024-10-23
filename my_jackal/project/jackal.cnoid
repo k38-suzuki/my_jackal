@@ -52,7 +52,7 @@ items:
               data: 
                 isNoDelayMode: false
                 controllerOptions: ""
-                controller: "ROSJackalController"
+                controller: "MyJackalDriveController"
                 base_directory: "Controller directory"
                 reloading: false
                 export_symbols: false

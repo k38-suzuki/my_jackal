@@ -1,5 +1,5 @@
 /**
-   ROS Husky Controller
+   Husky Drive Controller
    @author Kenta Suzuki
 */
 
@@ -10,7 +10,7 @@
 
 using namespace cnoid;
 
-class ROSHuskyController : public SimpleController
+class HuskyDriveController : public SimpleController
 {
     std::unique_ptr<ros::NodeHandle> node;
     ros::Subscriber subscriber;
@@ -47,7 +47,7 @@ public:
             io->enableIO(joint);
         }
 
-        subscriber = node->subscribe("cmd_vel", 100, &ROSHuskyController::twistCallback, this);
+        subscriber = node->subscribe("cmd_vel", 100, &HuskyDriveController::twistCallback, this);
 
         return true;
     }
@@ -86,4 +86,4 @@ public:
     }
 };
 
-CNOID_IMPLEMENT_SIMPLE_CONTROLLER_FACTORY(ROSHuskyController)
+CNOID_IMPLEMENT_SIMPLE_CONTROLLER_FACTORY(HuskyDriveController)
