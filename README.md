@@ -32,3 +32,9 @@ roslaunch my_jackal jackal.launch
 ```
 roslaunch my_jackal husky.launch
 ```
+
+## 4. References
+- https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/
+- https://clearpathrobotics.com/husky-a300-unmanned-ground-vehicle-robot/
+- http://www.nihonbinary.co.jp/Products/Robot/CLEARPATH_JACKAL.html
+- http://www.nihonbinary.co.jp/Products/Robot/CLEARPATH_HUSKY.html
